@@ -50,3 +50,9 @@ Le noyau (`core/`) est testé et validé de bout en bout sur une vraie
 machine Windows. Le CLI (`main.py`) et l'interface graphique PySide6
 (`gui.py`) sont tous deux construits par-dessus, sans dupliquer la logique
 d'installation.
+
+## Licence
+
+Code sous licence Apache-2.0 (voir [LICENSE](LICENSE)). Les notices des
+composants tiers (fontTools, PySide6/Qt, PyInstaller) sont dans
+[NOTICE](NOTICE).

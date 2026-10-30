@@ -1,0 +1,54 @@
+Schémaja
+Copyright 2026 Victoire NDALA
+
+Ce produit a été développé par Victoire NDALA.
+https://github.com/VictoireNdala/Schemaja
+
+Schémaja est distribué sous licence Apache-2.0 (voir le fichier LICENSE).
+
+
+Composants tiers
+================
+
+Schémaja utilise les composants suivants. Ils restent la propriété de leurs
+auteurs respectifs et sont soumis à leur propre licence.
+
+1. fontTools 4.63.0
+   Licence : MIT
+   https://github.com/fonttools/fonttools
+
+2. PySide6 (Qt for Python) 6.11.2
+   (paquets PySide6, PySide6_Essentials, PySide6_Addons, shiboken6)
+   Licence : LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+   (Schémaja l'utilise sous les termes de la LGPL-3.0)
+   https://pyside.org
+   Sources de Qt for Python : https://code.qt.io/cgit/pyside/pyside-setup.git
+   Sources et licences de Qt : https://www.qt.io/download-open-source
+   Texte de la LGPL-3.0 : https://www.gnu.org/licenses/lgpl-3.0.html
+
+3. PyInstaller 6.22.2 (outil de build uniquement, non distribué en tant que
+   dépendance ; son bootloader est inclus dans les exécutables générés)
+   Licence : GPL-2.0-or-later avec une exception spéciale autorisant
+   l'utilisation de PyInstaller pour construire et distribuer des programmes
+   non libres, y compris commerciaux
+   https://pyinstaller.org
+
+Outil de test uniquement (non distribué) :
+
+4. pytest 9.1.1
+   Licence : MIT
+   https://docs.pytest.org
+
+
+Note sur PySide6 / Qt (LGPL)
+============================
+
+Qt for Python est utilisé en tant que bibliothèque dynamique, sans
+modification. Le code source de Schémaja peut être exécuté avec n'importe
+quelle version compatible de PySide6 installée par l'utilisateur :
+
+    pip install -r requirements.txt
+    py gui.py
+
+Les sources de Qt for Python et le texte de sa licence sont disponibles aux
+adresses indiquées ci-dessus.
