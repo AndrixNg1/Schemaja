@@ -1,9 +1,9 @@
 # Schémaja
 
-Installe en masse des fichiers `.ttf`/`.otf` sur Windows, en une seule commande,
-sans passer par la boîte de dialogue native une police à la fois. Accepte
-aussi les dossiers ou fichiers `.zip` de polices : ils sont extraits puis
-scannés automatiquement.
+Bulk-installs `.ttf`/`.otf` font files on Windows with a single command,
+without going through the native dialog one font at a time. Also accepts
+folders or `.zip` archives of fonts: they are extracted and scanned
+automatically.
 
 ## Installation
 
@@ -11,48 +11,46 @@ scannés automatiquement.
 pip install -r requirements.txt
 ```
 
-## Utilisation
+## Usage
 
-### Interface graphique
+### Graphical interface
 
 ```
 python gui.py
 ```
 
-Choisir un dossier ou des fichiers, ajuster les options si besoin, cliquer
-sur "Scanner" puis "Installer".
+Pick a folder or files, adjust the options if needed, then click "Scan"
+and "Install".
 
-### Ligne de commande
+### Command line
 
 ```
-python main.py "C:\Users\vous\Downloads\MesPolices"
+python main.py "C:\Users\you\Downloads\MyFonts"
 ```
 
-Installe pour l'utilisateur courant, sans droits admin requis. Les polices
-déjà installées (même famille) sont automatiquement ignorées.
+Installs for the current user, no admin rights required. Fonts that are
+already installed (same family) are skipped automatically.
 
-Options : `--system` (tous les utilisateurs, nécessite un terminal
-administrateur), `--no-recursive` (ignore les sous-dossiers), `--force`
-(réinstalle même si déjà présente). Les mêmes options existent en cases à
-cocher dans l'interface graphique.
+Options: `--system` (all users, requires an administrator terminal),
+`--no-recursive` (ignore subfolders), `--force` (reinstall even if already
+present). The same options are available as checkboxes in the graphical
+interface.
 
-### Exe autonome
+### Standalone exe
 
-`dist/Schémaja.exe` : version portable, se lance directement sans
-installer Python. `dist/Schémaja_Setup.exe` : version installable — copie
-l'app dans `%LOCALAPPDATA%\Programs\Schémaja`, ajoute un raccourci au menu
-Démarrer, et s'enregistre dans "Applications et fonctionnalités" pour une
-désinstallation standard.
+`dist/Schémaja.exe`: portable version, runs directly without installing
+Python. `dist/Schémaja_Setup.exe`: installable version — copies the app to
+`%LOCALAPPDATA%\Programs\Schémaja`, adds a Start menu shortcut, and
+registers itself in "Apps & features" for a standard uninstall.
 
-## Où en est le projet
+## Project status
 
-Le noyau (`core/`) est testé et validé de bout en bout sur une vraie
-machine Windows. Le CLI (`main.py`) et l'interface graphique PySide6
-(`gui.py`) sont tous deux construits par-dessus, sans dupliquer la logique
-d'installation.
+The core (`core/`) is tested and validated end to end on a real Windows
+machine. The CLI (`main.py`) and the PySide6 graphical interface
+(`gui.py`) are both built on top of it, without duplicating the
+installation logic. See [PROJECT.md](PROJECT.md) for details.
 
-## Licence
+## License
 
-Code sous licence Apache-2.0 (voir [LICENSE](LICENSE)). Les notices des
-composants tiers (fontTools, PySide6/Qt, PyInstaller) sont dans
-[NOTICE](NOTICE).
+Code licensed under Apache-2.0 (see [LICENSE](LICENSE)). Third-party
+component notices are in [NOTICE](NOTICE).
