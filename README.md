@@ -28,16 +28,16 @@ et `fc-cache`, généralement déjà installées avec l'environnement graphique)
 
 ## Utilisation
 
-### Interface graphique
+### Graphical interface
 
 ```
 python gui.py
 ```
 
-Choisir un dossier ou des fichiers, ajuster les options si besoin, cliquer
-sur "Scanner" puis "Installer".
+Pick a folder or files, adjust the options if needed, then click "Scan"
+and "Install".
 
-### Ligne de commande
+### Command line
 
 ```
 python main.py "/chemin/vers/MesPolices"
@@ -63,7 +63,7 @@ l'app dans `%LOCALAPPDATA%\Programs\Schémaja`, ajoute un raccourci au menu
 Démarrer, et s'enregistre dans "Applications et fonctionnalités" pour une
 désinstallation standard.
 
-## Où en est le projet
+## Project status
 
 Le noyau (`core/`) prend en charge le registre Windows et Fontconfig sous
 Linux. Le CLI (`main.py`) et l'interface graphique PySide6
