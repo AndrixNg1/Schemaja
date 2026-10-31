@@ -1,6 +1,6 @@
 # Schémaja — project overview
 
-**Schémaja** is a Windows application that bulk-installs `.ttf` / `.otf`
+**Schémaja** is a Windows and linux application that bulk-installs `.ttf` / `.otf`
 fonts, instead of installing them one by one from File Explorer. It was
 born from a real need as a video maker: quickly making large downloaded
 font packs available.
